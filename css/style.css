@@ -33,6 +33,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #8cef9c;
+  border-radius: 10px;
   margin: 0px 10px;
 }
 
@@ -41,4 +42,18 @@ h1 {
   padding: 10px;
   margin: 5px;
   background-color: #e5be61;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 400px){
+    .search-container>form{
+        padding: 5px;
+    }
+
+    .search-container>form>button, .search-container>form>input{
+        display: flex;
+        margin: auto;
+        
+    }
+    
 }
