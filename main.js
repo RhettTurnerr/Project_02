@@ -24,7 +24,7 @@ $(document).ready(()=> {
             let data = ("response", response.data);
             $.each(data, (i,e)=>{
                 console.log("index:", i, "element", e);
-                gifs += `<img src = "${e.images.original.url}" alt = "${e.title}">`;
+                gifs += `<img src = "${e.images.original.url}" alt = "${e.title}" class = "gif">`;
             })
             console.log(gifs);
             console.log(gifContainer.innerHTML);
