@@ -1,3 +1,16 @@
+*{
+    margin: 0px;
+}
+
+nav{
+    background-color: beige;
+    padding: 10px;
+}
+
+nav>a{
+    text-decoration: none;
+}
+
 .gif-container{
     display: flex;
     flex-wrap: wrap;
