@@ -1,14 +1,11 @@
-const form = document.querySelector('.js-search-form');
 const gifContainer = document.querySelector('.js-gif-container');
 
-let gifs = '';
-
-
-// form.addEventListener("submit", ()=> console.log("it worked"));
 
 
 
-
+function goDark(){
+    console.log("test");
+}
 
 //Jquery code:
 
@@ -32,5 +29,7 @@ $(document).ready(()=> {
     $("#reset").click(()=>{
         gifContainer.innerHTML='';
     })
+
+    // $("#darkButton").click(goDark());
 
 })
