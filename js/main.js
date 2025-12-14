@@ -1,12 +1,5 @@
 const gifContainer = document.querySelector('.js-gif-container');
 
-
-
-
-function goDark(){
-    console.log("test");
-}
-
 //Jquery code:
 
 $(document).ready(()=> {
@@ -29,7 +22,5 @@ $(document).ready(()=> {
     $("#reset").click(()=>{
         gifContainer.innerHTML='';
     })
-
-    // $("#darkButton").click(goDark());
 
 })
