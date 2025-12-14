@@ -1,14 +1,4 @@
-const form = document.querySelector('.js-search-form');
 const gifContainer = document.querySelector('.js-gif-container');
-
-let gifs = '';
-
-
-form.addEventListener("submit", ()=> console.log("it worked"));
-
-
-
-
 
 //Jquery code:
 
@@ -23,11 +13,8 @@ $(document).ready(()=> {
         .done((response)=>{
             let data = ("response", response.data);
             $.each(data, (i,e)=>{
-                console.log("index:", i, "element", e);
                 gifs += `<img src = "${e.images.original.url}" alt = "${e.title}" class = "gif">`;
             })
-            console.log(gifs);
-            console.log(gifContainer.innerHTML);
             gifContainer.innerHTML=gifs;
         })
     })
